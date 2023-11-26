@@ -11,9 +11,10 @@ GameObject:
   - component: {fileID: 7185633791048418257}
   - component: {fileID: 6469044996677102302}
   - component: {fileID: 5085196486379167435}
+  - component: {fileID: 3609703718250248686}
   m_Layer: 0
   m_Name: NegativeCollectable
-  m_TagString: Untagged
+  m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,3 +113,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &3609703718250248686
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2773028970000119430}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 413a6c4ea2a15d64785a1d872bdd1dd9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

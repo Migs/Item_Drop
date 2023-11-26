@@ -26,4 +26,13 @@ public class CharacterController : MonoBehaviour
         _movement = value.Get<Vector2>();
         Debug.Log("Test");
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "Hazard")
+        {
+            Time.timeScale = 0;
+            Destroy(gameObject);
+        }
+    }
 }

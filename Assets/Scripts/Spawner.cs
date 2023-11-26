@@ -29,7 +29,7 @@ public class Spawner : MonoBehaviour
     }
 
     private void SpawnCollectable()
-    {
+    {   
         int randomUnit = Random.Range(0, 2);
 
         Instantiate(_collectables[randomUnit], transform.position, transform.rotation);
