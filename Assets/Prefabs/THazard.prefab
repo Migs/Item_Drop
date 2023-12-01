@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5085196486379167435}
   - component: {fileID: 3609703718250248686}
   m_Layer: 0
-  m_Name: NegativeCollectable
+  m_Name: THazard
   m_TagString: Hazard
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.37862992, g: 0.23851903, b: 0.754717, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

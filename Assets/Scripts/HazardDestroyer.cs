@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CollectableDestroyer : MonoBehaviour
+public class HazardDestroyer : MonoBehaviour
 {
     private float _liveTime = 3.5f;
 

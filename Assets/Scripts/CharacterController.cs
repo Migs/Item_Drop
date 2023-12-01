@@ -1,5 +1,4 @@
-using System.Collections;
-using System.Collections.Generic;
+using UnityEngine.SceneManagement;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -31,8 +30,7 @@ public class CharacterController : MonoBehaviour
     {
         if(collision.gameObject.tag == "Hazard")
         {
-            Time.timeScale = 0;
-            Destroy(gameObject);
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }

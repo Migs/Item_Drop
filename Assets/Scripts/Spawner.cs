@@ -5,7 +5,7 @@ using UnityEngine;
 public class Spawner : MonoBehaviour
 {
     [SerializeField]
-    private GameObject[] _collectables;
+    private GameObject[] _hazards;
 
     private float _respawnTime;
 
@@ -19,7 +19,7 @@ public class Spawner : MonoBehaviour
     {
         if(_respawnTime <= 0)
         {
-            SpawnCollectable();
+            SpawnHazard();
             _respawnTime = Random.Range(3f, 10f);
         }
         else
@@ -28,10 +28,10 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    private void SpawnCollectable()
+    private void SpawnHazard()
     {   
         int randomUnit = Random.Range(0, 2);
 
-        Instantiate(_collectables[randomUnit], transform.position, transform.rotation);
+        Instantiate(_hazards[randomUnit], transform.position, transform.rotation);
     }
 }
